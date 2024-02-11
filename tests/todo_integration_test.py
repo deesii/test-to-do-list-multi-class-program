@@ -80,3 +80,9 @@ def test_for_give_up_after_adding_and_completing_task():
     todo_list.give_up()
     assert todo_list.incomplete() == []
     assert todo_list.complete() ==[todo_1, todo_2, todo_3]
+
+    '''
+    Additional ones that could be done: Exceptions for when there isnt 
+    a task that is not a string or that is empty
+    
+    '''

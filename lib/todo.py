@@ -9,8 +9,11 @@ class Todo:
         # Side-effects:
         #   Sets the task property
         #   Sets the complete property to False
-        self.task = task
-        self.complete = False
+        if type(task) == str and task!= "":
+            self.task = task
+            self.complete = False
+        else:
+            raise Exception("Input valid task as string that is not empty!")
 
     def mark_complete(self):
         # Returns:
